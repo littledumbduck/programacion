@@ -1,0 +1,24 @@
+package boletin_4;
+
+import java.util.Scanner;
+
+public class ejercicio6 {
+
+	public static void main(String[] args) {
+		
+		int num;
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.println("Introduzca el número:");
+		num = teclado.nextInt();
+		
+		System.out.println("La tabla de multiplicar de " + num + " es:");
+		for (int i = 0; i <= 10; i++) {
+			
+			System.out.println(num + " * " + i + " = " + (num*i));
+			
+		}
+		teclado.close();
+	}
+
+}

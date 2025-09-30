@@ -1,0 +1,25 @@
+package boletin_3;
+
+import java.util.Scanner;
+
+public class ejercicio10 {
+
+	public static void main(String[] args) {
+
+		double numero;
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.println("Teclee un número:");
+		numero = teclado.nextInt();
+		
+		double operacion = numero + 2;
+		
+		if (operacion %1 > 0) {
+			System.out.println("El número es impar");
+		}
+		else System.out.println("El número es par.");
+		
+		teclado.close();
+	}
+
+}

@@ -1,0 +1,17 @@
+package boletin_4;
+
+import java.util.Scanner;
+
+public class ejercicio12 {
+
+	public static void main(String[] args) {
+		
+		char letter;
+		Scanner l = new Scanner(System.in);
+		letter = l.next().charAt(0);
+		
+		System.out.println(letter);
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+package boletin_4;
+
+public class ejercicio1 {
+
+	public static void main(String[] args) {
+		
+		while (condition) {
+			
+		}
+
+	}
+
+}

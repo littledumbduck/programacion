@@ -1,0 +1,24 @@
+package boletin_4;
+
+import java.util.Scanner;
+
+public class ejercicio10 {
+
+	public static void main(String[] args) {
+		
+		double num;
+		double suma = 0;
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.println("Teclee un número para hacer la suma de sus siguientes 100 números:");
+		num = teclado.nextDouble();
+		
+		for (int i = 0; i < 100; i++) {
+			suma = suma + num++;
+			
+			
+		}
+		System.out.println("La suma es " + suma);
+	}
+
+}

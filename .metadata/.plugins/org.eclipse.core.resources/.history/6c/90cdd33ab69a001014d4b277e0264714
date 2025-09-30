@@ -1,0 +1,25 @@
+package boletin_3;
+
+import java.util.Scanner;
+
+public class ejercicio17 {
+
+	public static void main(String[] args) {
+
+		int anio;
+		Scanner teclado = new Scanner(System.in);
+
+		System.out.println("Teclee el año:");
+		anio = teclado.nextInt();
+
+		double bisiesto = anio / 4;
+
+		if (bisiesto % 1 == 0) {
+			System.out.println("El año es bisiesto.");
+		} else {
+			System.out.println("El año no es bisiesto.");
+		}
+		teclado.close();
+	}
+
+}

@@ -1,0 +1,22 @@
+package boletin_2;
+
+public class ejercicio12 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("  _      _                        ");
+		System.out.println(" : `.--.' ;              _....,_  ");
+		System.out.println(" .'      `.      _..--'\\"'       `-._");
+		System.out.println(":          :_.-'\\"                  .`.");
+		System.out.println(":  6    6  :                     :  '.;");
+		System.out.println(":          :                      `..';");
+		System.out.println("`: .----. :'                          ;");
+		System.out.println("  `._Y _.'               '           ;");
+		System.out.println("    'U'      .'          `.         ; ");
+		System.out.println("       `:   ;`-..___       `.     .'`.");
+		System.out.println("       _:   :  :    ```\\"''\\"'``.    `.  `.");
+		System.out.println("     .'     ;..'            .'       `.'`");
+		System.out.println("    `.......'              `........-'`");
+	}
+
+}

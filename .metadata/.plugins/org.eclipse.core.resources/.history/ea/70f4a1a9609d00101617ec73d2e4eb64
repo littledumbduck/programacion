@@ -1,0 +1,33 @@
+package boletin_4;
+
+import java.util.Scanner;
+
+public class ejercicio11 {
+
+	public static void main(String[] args) {
+
+		int num1, num2, mayor, menor;
+		int numero = 0;
+		Scanner teclado = new Scanner(System.in);
+
+		System.out.println("Teclee el primer número:");
+		num1 = teclado.nextInt();
+		System.out.println("Teclee el segundo número:");
+		num2 = teclado.nextInt();
+
+		if (num1 > num2) {
+			mayor = num1;
+			menor = num2;
+		} else {
+			mayor = num2;
+			menor = num1;
+		}
+
+		while (menor < mayor) {
+			System.out.println(menor);
+			menor = menor + 7;
+		}
+		teclado.close();
+	}
+
+}

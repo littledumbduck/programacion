@@ -1,0 +1,19 @@
+package paquete1;
+
+public class ejercicio9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Computer      Ordenador");
+		System.out.println("Student       Alumno/a");
+		System.out.println("Cat           Gato");
+		System.out.println("Penguin       Pingüino");
+		System.out.println("Machine       Máquina");
+		System.out.println("Nature        Naturaleza");
+		System.out.println("Light         Luz");
+		System.out.println("Green         Verde");
+		System.out.println("Book          Libro");
+		System.out.println("Pyramid       Pirámide");
+	}
+
+}

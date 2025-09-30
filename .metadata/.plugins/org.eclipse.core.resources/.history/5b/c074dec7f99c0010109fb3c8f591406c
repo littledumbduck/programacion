@@ -1,0 +1,35 @@
+package boletin_3;
+
+import java.util.Scanner;
+
+public class ejercicio18 {
+
+	public static void main(String[] args) {
+
+		double nota;
+		Scanner teclado = new Scanner(System.in);
+
+		System.out.println("Teclee la nota:");
+		nota = teclado.nextDouble();
+
+		if (nota < 5) {
+			System.out.println("F");
+		} else {
+			if (nota < 7) {
+				System.out.println("D");
+			} else {
+				if (nota < 7) {
+					System.out.println("C");
+				} else {
+					if (nota <= 8) {
+						System.out.println("B");
+					} else {
+						System.out.println("a");
+					}
+				}
+			}
+		}
+
+	}
+
+}

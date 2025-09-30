@@ -1,0 +1,48 @@
+package boletin_3;
+
+import java.util.Scanner;
+
+public class ejercicio6 {
+
+	public static void main(String[] args) {
+		
+		double numero1, numero2, numero3;
+		Scanner teclado = new Scanner(System.in);
+
+		System.out.println("Teclee el primer número");
+		numero1 = teclado.nextDouble();
+
+		System.out.println("Teclee el segundo número");
+		numero2 = teclado.nextDouble();
+		
+		System.out.println("Teclee el tercer número");
+		numero3 = teclado.nextDouble();
+
+		if (numero1>numero2) {
+			if (numero1>numero3) {
+				if (numero2>numero3) {
+					System.out.println(1 + " > " + 2 + " > " + 3);
+				} else {
+					System.out.println(1 + " > " + 3 + " > " + 2);
+				}
+			} else {
+				System.out.println(3 + " > " + 1 + " > " + 2);
+			}
+		} else {
+			if (numero2>numero1) {
+				if (numero2>numero3) {
+					if (numero3>numero1) {
+						System.out.println(2 + " > " + 3 + " > " + 1);
+					} else {
+						System.out.println(2 + " > " + 1 + " > " + 3);
+					}
+				} else {
+					System.out.println(3 + " > " + 2 + " > " + 1);
+				}
+			} else {
+
+			}
+		}
+}
+
+}

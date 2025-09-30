@@ -1,0 +1,30 @@
+package boletin_4;
+
+import java.util.Scanner;
+
+public class ejercicio8 {
+
+	public static void main(String[] args) {
+
+		int numero = 0;
+		int positivo = 0;
+		int negativo = 0;
+		Scanner teclado = new Scanner(System.in);
+		int bucle = 10;
+
+		while (bucle < 0) {
+			System.out.println("Teclee un número (quedan " + bucle + " números):");
+			
+			if (numero >= 0) {
+				positivo++;
+			} else {
+				negativo++;
+			}
+			bucle = bucle - 1;
+		}
+		
+		System.out.println("Hay " + positivo + " números positivos y " + negativo + " números negativos.");
+
+	}
+
+}

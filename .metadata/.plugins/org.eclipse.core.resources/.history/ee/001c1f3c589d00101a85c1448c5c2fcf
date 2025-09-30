@@ -1,0 +1,13 @@
+package boletin_4;
+
+public class ejercicio4 {
+
+	public static void main(String[] args) {
+
+		int num = 320;
+		
+
+
+	}
+
+}

@@ -1,0 +1,52 @@
+package boletin_3;
+
+import java.util.Scanner;
+
+public class ejercicio7 {
+
+	public static void main(String[] args) {
+
+		int numero;
+		Scanner teclado = new Scanner(System.in);
+
+		System.out.println("Teclee el día de la semana:");
+		numero = teclado.nextInt();
+
+		switch (numero) {
+		case 1:
+			System.out.println("El día introducido es Lunes.");
+			break;
+
+		case 2:
+			System.out.println("El día introducido es Martes.");
+			break;
+
+		case 3:
+			System.out.println("El día introducido es Miércoles.");
+			break;
+
+		case 4:
+			System.out.println("El día introducido es Jueves.");
+			break;
+
+		case 5:
+			System.out.println("El día introducido es Viernes.");
+			break;
+
+		case 6:
+			System.out.println("El día introducido es Sábado.");
+			break;
+
+		case 7:
+			System.out.println("El día introducido es Domingo.");
+			break;
+
+		default:
+			System.out.println("Error.");
+			break;
+		}
+		teclado.close();
+
+	}
+
+}

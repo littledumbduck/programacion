@@ -1,0 +1,25 @@
+package boletin_2;
+
+import java.util.Scanner;
+
+public class prueba {
+	public class ejercicio7 {
+
+		public static void main(String[] args) {
+
+			int edad;
+			System.out.println("Teclee la edad:");
+			Scanner teclado = new Scanner(System.in);
+
+
+			edad = teclado.nextInt();
+
+			if (edad <= 18) {
+				System.out.println("Eres mayor de edad");
+			} else {
+				System.out.println("No eres mayor de edad");
+			}
+			teclado.close();
+		}
+	}
+}
