@@ -1,12 +1,10 @@
 package boletin_4;
 
-public class ejercicio3 {
+public class Ejercicio01 {
 
 	public static void main(String[] args) {
-
-		for (int i = 320; i > 160; i = i - 20) {
+		for (int i = 0; i <= 100; i = i + 5) {
 			System.out.println(i);
 		}
 	}
-
 }

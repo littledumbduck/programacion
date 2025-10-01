@@ -14,7 +14,8 @@ public class ejercicio10 {
 		num = teclado.nextDouble();
 		
 		for (int i = 0; i < 100; i++) {
-			suma = suma + num++;
+			suma = suma + num;
+			num++;
 		}
 		System.out.println("La suma es " + suma);
 		teclado.close();

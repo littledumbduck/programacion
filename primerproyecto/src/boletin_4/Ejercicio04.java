@@ -1,17 +1,18 @@
 package boletin_4;
 
-public class ejercicio2 {
+public class Ejercicio04 {
 
 	public static void main(String[] args) {
 
-		int num = 0;
-
-		while (num <= 100) {
-
+		int num = 320;
+		
+		while (num>160) {
+			
 			System.out.println(num);
-
-			num= num + 5;
+			num = num - 20;
+			
 		}
+
 	}
 
 }

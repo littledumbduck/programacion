@@ -2,7 +2,7 @@ package boletin_4;
 
 import java.util.Scanner;
 
-public class ejercicio7 {
+public class Ejercicio07 {
 
 	public static void main(String[] args) {
 
