@@ -28,7 +28,7 @@ public class Ejercicio09 {
 		} else {
 			System.out.println("El número es primo.");
 		}
-
+		teclado.close();
 	}
 
 }
