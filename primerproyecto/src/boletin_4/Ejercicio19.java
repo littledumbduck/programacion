@@ -16,6 +16,7 @@ public class Ejercicio19 {
 			suma = suma + (i + i);
 		}
 		System.out.println("El resultado es:" + suma);
+		teclado.close();
 	}
 
 }
