@@ -26,7 +26,7 @@ public class ejercicio20 {
 		}
 
 		teclado.close();
-		System.out.println("La media de notas es " + media + " y las notas superiores a la media es de " + positivo + " notas");
+		System.out.println("La media de notas es " + media + " y las notas superiores a la media es de " + positivo + " notas.");
 
 	}
 
