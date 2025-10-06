@@ -11,9 +11,10 @@ public class Ejercicio19 {
 
 		System.out.println("Teclee un número:");
 		num = teclado.nextInt();
-
-		for (int i = 0; i < num; i++) {
-			suma = suma + (i + i);
+		
+		for (int i = 1; i < num; i++) {
+			System.out.println(suma);
+			suma = suma + i;
 		}
 		System.out.println("El resultado es:" + suma);
 		teclado.close();

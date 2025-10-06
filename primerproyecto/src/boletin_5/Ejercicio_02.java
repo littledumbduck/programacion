@@ -1,9 +1,23 @@
-package boletin_4;
+package boletin_5;
 
 import java.util.Scanner;
 
-public class Ejercicio09 {
+import boletin_4.Ejercicio09;
 
+public class Ejercicio_02 {
+
+	public static void main(String[] args) {
+		
+		double num;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Di el número primo");
+		num = sc.nextDouble();
+		Ejercicio09.Primo(num);
+		sc.close();
+		
+	}
+	
 	public static void Primo(double num) {
 		
 		int resultado = 0;
@@ -26,17 +40,6 @@ public class Ejercicio09 {
 		}
 		System.out.println(primo);
 		
-	}
-	
-	public static void main(String[] args) {
-		
-		double num;
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.println("Di el número primo");
-		num = sc.nextDouble();
-		Ejercicio09.Primo(num);
-		sc.close();
 	}
 
 }
