@@ -21,14 +21,7 @@ public class Ejercicio_01 {
 
 			switch (opcion) {
 			case 1:
-				int horas, minutos, segundos;
-				System.out.println("Teclee las horas:");
-				horas = teclado.nextInt();
-				System.out.println("Teclee los minutos:");
-				minutos = teclado.nextInt();
-				System.out.println("Teclee los segundos:");
-				segundos = teclado.nextInt();
-				Funciones.ContarHoras(horas, minutos, segundos);
+				Funciones.ContarHoras();
 				break;
 			case 2:
 				Funciones.Casino();

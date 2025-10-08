@@ -4,8 +4,15 @@ import java.util.*;
 
 public class Funciones {
 
-	public static void ContarHoras(int horas, int minutos, int segundos) {
-
+	public static void ContarHoras() {
+		Scanner teclado = new Scanner(System.in);
+		int horas, minutos, segundos;
+		System.out.println("Teclee las horas:");
+		horas = teclado.nextInt();
+		System.out.println("Teclee los minutos:");
+		minutos = teclado.nextInt();
+		System.out.println("Teclee los segundos:");
+		segundos = teclado.nextInt();
 		segundos++;
 		if (segundos >= 60) {
 			segundos = 0;
@@ -17,6 +24,7 @@ public class Funciones {
 		}
 		System.out.println(
 				"El resultado sería " + horas + " horas, " + minutos + " minutos y " + segundos + " segundos.");
+
 	}
 
 	public static void Casino() {
