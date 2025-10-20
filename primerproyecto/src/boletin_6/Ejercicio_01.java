@@ -7,9 +7,10 @@ public class Ejercicio_01 {
 	public static void main(String[] args) {
 
 		int opcion = 0;
-		Scanner teclado = new Scanner(System.in);
+		boolean repite = true;
+		Scanner l = new Scanner(System.in);
 
-		while (opcion != 4) {
+		while (repite == true) {
 
 			System.out.println("Selecciona una operación:");
 			System.out.println("1- Sumar segundo");
@@ -17,7 +18,7 @@ public class Ejercicio_01 {
 			System.out.println("3- Triángulo");
 			System.out.println("4- Salir");
 
-			opcion = teclado.nextInt();
+			opcion = l.nextInt();
 
 			switch (opcion) {
 			case 1:
@@ -31,12 +32,13 @@ public class Ejercicio_01 {
 				break;
 			case 4:
 				System.out.println("Saliendo de la aplicación.");
-				opcion = 4;
+				repite = false;
 				break;
 			default:
 				System.out.println("Error. Número no válido.");
 				break;
 			}
 		}
+		l.close();
 	}
 }

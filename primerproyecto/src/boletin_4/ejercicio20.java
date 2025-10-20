@@ -6,28 +6,30 @@ public class ejercicio20 {
 
 	public static void main(String[] args) {
 
-		int num, total = 0;
-		int media = 0;
-		int numerodenotas = 0, positivo = 0;
-		Scanner teclado = new Scanner(System.in);
+		double[] arr1 = new double[10];
+		double media = 0;
+		int positivo = 0;
+		double suma = 0;
+		Scanner sc = new Scanner(System.in);
 
-		for (int i = 0; i < 10; i++) {
-			System.out.println("Teclee la nota:");
-			num = teclado.nextInt();
-
-			total = total + num;
-			numerodenotas++;
-			media = total / numerodenotas;
-
-			if (num > media) {
-				positivo++;
-			}
-
+		for (int i = 0; i < arr1.length; i++) {
+			System.out.println("Introduzca una nota:");
+			arr1[i] = sc.nextDouble();
+			suma = suma + arr1[i];
 		}
 
-		teclado.close();
-		System.out.println("La media de notas es " + media + " y las notas superiores a la media es de " + positivo + " notas.");
+		media = suma / 10;
 
+		for (int i = 0; i < arr1.length; i++) {
+			if (arr1[i] >= media) {
+				positivo++;
+			}
+		}
+
+		System.out.println("La media de todas las notas es de " + media + ".");
+		System.out.println("Hay " + positivo + " notas mayores que la media.");
+		System.out.println(arr1.length);
+		sc.close();
 	}
 
 }

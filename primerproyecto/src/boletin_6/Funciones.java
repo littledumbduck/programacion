@@ -5,14 +5,14 @@ import java.util.*;
 public class Funciones {
 
 	public static void ContarHoras() {
-		Scanner teclado = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		int horas, minutos, segundos;
 		System.out.println("Teclee las horas:");
-		horas = teclado.nextInt();
+		horas = sc.nextInt();
 		System.out.println("Teclee los minutos:");
-		minutos = teclado.nextInt();
+		minutos = sc.nextInt();
 		System.out.println("Teclee los segundos:");
-		segundos = teclado.nextInt();
+		segundos = sc.nextInt();
 		segundos++;
 		if (segundos >= 60) {
 			segundos = 0;
@@ -24,7 +24,6 @@ public class Funciones {
 		}
 		System.out.println(
 				"El resultado sería " + horas + " horas, " + minutos + " minutos y " + segundos + " segundos.");
-
 	}
 
 	public static void Casino() {
