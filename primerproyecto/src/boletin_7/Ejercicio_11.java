@@ -1,11 +1,11 @@
 package boletin_7;
 
-public class Ejercicio_07 {
+public class Ejercicio_11 {
 
 	public static void main(String[] args) {
 		
-		System.out.println(0 % 2);
-
+		
+		
 	}
 
 }
