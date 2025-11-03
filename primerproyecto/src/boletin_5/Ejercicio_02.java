@@ -27,7 +27,7 @@ public class Ejercicio_02 {
 
 			double division = num / i;
 
-			if (division % 1 == 0) {
+			if (division % 2 == 0) {
 				resultado++;
 			}
 

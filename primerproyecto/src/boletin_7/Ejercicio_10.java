@@ -10,9 +10,8 @@ public class Ejercicio_10 {
 		double[] intp = new double[10];
 		double[] finalres = new double[10];
 		Scanner sc = new Scanner(System.in);
-		double division = 0;
-		int contadorprimo = 0;
-		int orden = 0;
+		boolean primo;
+		int contador = 0;
 
 		// 10 Scanners for intp
 		for (int i = 0; i < intp.length; i++) {
@@ -27,11 +26,29 @@ public class Ejercicio_10 {
 		}
 
 		// for to place prime numbers
-
+		for (int i = 0; i < finalres.length; i++) {
+			
+			primo = esPrimo(intp[i]);
+			
+			if (primo == true) {
+				finalres[contador] = intp[i];
+				contador++;
+			}
+			
+		}
 
 
 		// for to place non prime numbers
-
+		for (int i = 0; i < finalres.length; i++) {
+			
+			primo = esPrimo(intp[i]);
+			
+			if (primo == false) {
+				finalres[contador] = intp[i];
+				contador++;
+			}
+			
+		}
 
 
 		// Print final array
@@ -40,5 +57,28 @@ public class Ejercicio_10 {
 		}
 
 	}
+	
+	public static boolean esPrimo(double intp) {
+		
+		int resultado = 0;
+		boolean primo;
+		
+		for (int i = 1; i <= intp; i++) {
 
+			double division = intp / i;
+
+			if (division % 2 == 0) {
+				resultado++;
+			}
+
+		}
+
+		if (resultado > 2) {
+			primo = true;
+		} else {
+			primo = false;
+		}
+		return primo;
+	}
+	
 }
