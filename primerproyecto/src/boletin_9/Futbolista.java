@@ -18,6 +18,14 @@ public class Futbolista {
 		this.numeroCamiseta = numeroCamiseta;
 	}
 	
+	public Futbolista() {
+		this.nombre = "";
+		this.equipo = "";
+		this.edad = 0;
+		this.posicion = "";
+		this.numeroCamiseta = 0;
+	}
+	
 	//getters
 	public String getNombre() {
 		return nombre;
