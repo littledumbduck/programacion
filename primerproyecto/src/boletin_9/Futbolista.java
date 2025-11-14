@@ -84,4 +84,11 @@ public class Futbolista {
 		return sueldoConIva;
 	}
 	
+	
+	//toString
+	public String toString() {
+		return "Futbolista [nombre=" + nombre + ", equipo=" + equipo + ", edad=" + edad + ", posicion=" + posicion
+				+ ", numeroCamiseta=" + numeroCamiseta + "]";
+	}
+	
 }

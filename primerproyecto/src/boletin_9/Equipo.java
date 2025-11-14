@@ -9,18 +9,20 @@ public class Equipo {
 	
 	//constructors
 	public Equipo() {
-		nombreEquipo = "";
-		equipo = new Futbolista[11];
+		this.nombreEquipo = "";
+		this.equipo = new Futbolista[11];
 		for (int i = 0; i < equipo.length; i++) {
-			equipo[i] = new Futbolista();
+			Futbolista x = new Futbolista();
+			this.equipo[i] = x;
 		}
 	}
 	
 	public Equipo(String nombreEquipo) {
 		this.nombreEquipo = nombreEquipo;
-		equipo = new Futbolista[11];
+		this.equipo = new Futbolista[11];
 		for (int i = 0; i < equipo.length; i++) {
-			equipo[i] = new Futbolista();
+			Futbolista x = new Futbolista();
+			this.equipo[i] = x;
 		}
 	}
 	
@@ -47,8 +49,21 @@ public class Equipo {
 	}
 	
 	//Methods
-	public void añadirFutbolista() {
+	public void anadirFutbolista(Futbolista x) {
+		
+		for (int i = 0; i < equipo.length; i++) {
+			if (this.equipo[i]==null) {
+				equipo[i] = x;
+			} else if (equipo[i] != null && i == (equipo.length-1)) {
+				System.out.println("Equipo completo");
+			}
+		}
+			
+		}
+	
+	public int getTamano() {
+		return this.equipo.length;
+	}
 		
 	}
 
-}
