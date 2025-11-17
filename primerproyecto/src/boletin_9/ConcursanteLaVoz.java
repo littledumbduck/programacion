@@ -11,21 +11,21 @@ public class ConcursanteLaVoz {
 	
 	//Constructors
 	public ConcursanteLaVoz() {
-		String nombre = "";
-		int edad = 0;
-		String generoMusical = "";
-		String coach = "";
-		String faseActual = "";
-		boolean haSidoSalvado = false;
+		this.nombre = "";
+		this.edad = 0;
+		this.generoMusical = "";
+		this.coach = "";
+		this.faseActual = "";
+		this.haSidoSalvado = false;
 	}
 	
 	public ConcursanteLaVoz(String nombre, int edad, String generoMusical, String coach, String faseActual, boolean haSidoSalvado) {
-		nombre = nombre;
-		edad = edad;
-		generoMusical = generoMusical;
-		coach = coach;
-		faseActual = faseActual;
-		haSidoSalvado = haSidoSalvado;
+		this.nombre = nombre;
+		this.edad = edad;
+		this.generoMusical = generoMusical;
+		this.coach = coach;
+		this.faseActual = faseActual;
+		this.haSidoSalvado = haSidoSalvado;
 	}
 	
 	//Getters
@@ -73,15 +73,18 @@ public class ConcursanteLaVoz {
 	//Methods
 	public void avanzarFase(String nuevaFase) {
 		faseActual = nuevaFase;
+		System.out.println("El concursante " + this.nombre + " ha avanzado a la fase " + this.faseActual + ".");
 	}
 	
 	public void salvarConcursante() {
 		haSidoSalvado = true;
+		System.out.println("El concursante " + this.nombre + " ha sido salvado!");
 	}
 	
 	public void esEliminado() {
 		haSidoSalvado = false;
 		faseActual = "eliminado";
+		System.out.println("El concursante " + this.nombre + " ha sido eliminado!");
 	}
 	
 	public void mostrarPerfil() {
@@ -92,10 +95,11 @@ public class ConcursanteLaVoz {
 		System.out.println("Fase actual: " + faseActual);
 		System.out.println("¿Está salvado?: " + haSidoSalvado);
 	}
-	
-	
-	
-	
-	
+
+	//toString
+	public String toString() {
+		return "ConcursanteLaVoz [nombre=" + nombre + ", edad=" + edad + ", generoMusical=" + generoMusical + ", coach="
+				+ coach + ", faseActual=" + faseActual + ", haSidoSalvado=" + haSidoSalvado + "]";
+	}
 	
 }
