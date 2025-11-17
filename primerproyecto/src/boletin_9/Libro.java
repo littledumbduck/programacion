@@ -59,7 +59,11 @@ public class Libro {
 	}
 
 	public void setAnioPublicacion(int anioPublicacion) {
-		this.anioPublicacion = anioPublicacion;
+		if (anioPublicacion >= 1440) {
+			this.anioPublicacion = anioPublicacion;
+		} else {
+			System.out.println("La fecha" + anioPublicacion + " no es válida.");
+		}
 	}
 
 	public void setEstaPrestado(boolean estaPrestado) {
@@ -85,11 +89,18 @@ public class Libro {
 		System.out.println("Editorial: " + this.editorial);
 		System.out.println("Año de publicación: " + this.anioPublicacion);
 		System.out.print("¿Está prestado?");
-		if (estaPrestado) {
-			
+		if (estaPrestado == true) {
+			System.out.println(": sí.");
 		} else {
-
+			System.out.println(": no.");
 		}
+	}
+	
+	// toString
+	@Override
+	public String toString() {
+		return "Libro [titulo=" + titulo + ", autor=" + autor + ", editorial=" + editorial + ", anioPublicacion="
+				+ anioPublicacion + ", estaPrestado=" + estaPrestado + "]";
 	}
 
 }
