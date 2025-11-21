@@ -2,13 +2,13 @@ package boletin_9;
 
 public class TikTokVideo {
 
-	String videoId;
-	String usuario;
-	float duracion;
-	int likes;
-	int comentarios;
-	String descripcion;
-	String hashtags;
+	private String videoId;
+	private String usuario;
+	private float duracion;
+	private int likes;
+	private int comentarios;
+	private String descripcion;
+	private String hashtags;
 
 	// Constructor
 	public TikTokVideo(String videoId, String usuario, float duracion, int likes, int comentarios, String descripcion,
